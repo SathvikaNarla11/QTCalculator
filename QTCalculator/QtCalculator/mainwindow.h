@@ -42,9 +42,12 @@ private slots:
     void on_pushButtonMinus_clicked();
     void on_pushButtonMultiply_clicked();
     void on_pushButtonDiv_clicked();
+    void on_pushButtonQuo_clicked();
 
 
     void on_pushButtonBack_clicked();
+
+    void on_pushButtonDot_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -54,6 +57,7 @@ private:
     QString equ;
     QString operation;
     QString expression;
+    static int count;
 
 };
 #endif // MAINWINDOW_H
