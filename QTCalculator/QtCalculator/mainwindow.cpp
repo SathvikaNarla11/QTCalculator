@@ -174,7 +174,7 @@ void MainWindow::on_pushButtonQuo_clicked()
 
 void MainWindow::on_pushButtonEq_clicked()
 {
-
+    count=0;
     equ.append('=');
     double result = 0.0;
     double n2;
@@ -377,6 +377,7 @@ void MainWindow::on_pushButtonDot_clicked()
     {
         operand2 +='.';
         ui->lineEdit->setText(operand1+operation + operand2);
+        count++;
     }
 }
 
